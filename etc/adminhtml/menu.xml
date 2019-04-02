@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="biren_crudimage::core" title="Crudimage" module="Biren_Crudimage" sortOrder="90" resource="Biren_Crudimage::sample"/>
+        <add id="biren_crudimage::test" title="Items" module="Biren_Crudimage" sortOrder="10" parent="biren_crudimage::core" action="biren_crudimage/items/" resource="Biren_Crudimage::items"/>
+    </menu>
+</config>

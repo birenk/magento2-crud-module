@@ -1,0 +1,37 @@
+<form class="" action="<?php echo $block->getBaseUrl().'crudimage/index/save'; ?>" id="biren-crudimage-form" method="post" enctype='multipart/form-data'  data-mage-init='{"validation": {}}'>
+    <fieldset class="fieldset">
+        <legend class="legend"><span>Test Form For Biren_Crudimage Module <a href="<?php echo $block->getBaseUrl().'crudimage/index/list'; ?>">(Visit List Page)</a></span></legend><br>
+        <div class="field note no-label">Write here anything you want.</div>
+        <div class="field title">
+            <label class="label" for="title"><span>Title</span></label>
+            <div class="control">
+                <input name="title" id="title" title="Name" value="" class="input-text" type="text" data-validate="{required:true}">
+            </div>
+        </div>
+        <div class="field author">
+            <label class="label" for="author"><span>Author</span></label>
+            <div class="control">
+                <input name="author" id="author" title="Author" value="" class="input-text" type="text" data-validate="{required:true}">
+            </div>
+        </div>
+        <div class="field content">
+            <label class="label" for="content"><span>Content</span></label>
+            <div class="control">
+                <textarea name="content" id="content" title="Content" class="input-text" cols="5" rows="3" data-validate="{required:true}"></textarea>
+            </div>
+        </div>
+        <div class="field image">
+            <label class="label" for="image"><span>Image</span></label>
+            <div class="control">
+                <input name="image" id="image" title="Image" value="" class="input-text" type="file">
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" title="Submit" class="action submit primary">
+                <span>Submit</span>
+            </button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+<?php
+    $singleData = $block->getSingleData();
+?>
+<div>
+    <h3>Title</h3>
+    <p><?php echo $singleData->getTitle(); ?></p>   
+</div>
+<div>
+    <h3>Author</h3>
+    <p><?php echo $singleData->getAuthor(); ?></p>
+</div>
+<div>
+    <h3>Content</h3>
+    <p><?php echo $this->_filterProvider->getPageFilter()->filter($singleData->getContent()); ?></p>
+</div>
+<div>
+	<h3>Image</h3>
+	<?php if($singleData->getImage()): ?>
+        <img width="400" height="300" src="<?php echo $block->getBaseUrl().'pub/media/'.$singleData->getImage(); ?>">
+    <?php else: ?>
+        <p>No Image</p>
+    <?php endif; ?>
+</div>
+<div>
+    <h3>Date</h3>
+    <p><?php echo $singleData->getCreatedAt(); ?></p>
+</div>

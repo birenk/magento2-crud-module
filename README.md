@@ -34,9 +34,3 @@ composer config repositories.biren-magento2-crud-module vcs https://github.com/b
         'Biren_Crudimage' => 1,
 
 - Clear cache
-
-
-# Version
-
-Updated to version 1.0.0 to achieve a stable version and demonstrate the handling of module updates via composer and tags
-Updated to version 1.0.2 to test module update via composer and tags
